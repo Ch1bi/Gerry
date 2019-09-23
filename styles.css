@@ -1,0 +1,445 @@
+:root {
+    --primary-color: #002B44;
+    --accent-color:#1CC696;
+    --page-copy-color:#6C757D;
+  }
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+  input:focus {
+    color:#ffffff;
+  }
+
+body{
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+
+h1 {
+    font-size:40px;
+    font-weight: 400;
+    color:var(--primary-color);
+}
+
+h2{
+    font-size:2.5em;
+}
+
+h3{
+    font-size:1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color:var(--primary-color);
+}
+
+
+
+header{
+    border-bottom:1px solid #F2F2F2;
+}
+
+.title{
+    padding:20px;
+}
+
+
+.logo{
+    width:150px;
+    margin:10px;
+    height:auto;
+}
+
+/* Intro section */
+
+.intro{
+    height:100vh;   
+    
+}
+
+.goBack{
+    display:flex;
+    align-items: center;
+    margin:20px;
+}
+.goBack > h3{
+ padding: 0 5px;
+ font-weight: 900;
+}
+.lobby-container{
+    height:320px;
+    width:100%;
+}
+
+.lobby-container > img {
+    width:100%;
+    max-height:100%;
+}
+
+.brandywine-info {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    justify-content: space-between;
+    margin:40px;
+}
+
+
+.learn-more {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brandywine-price{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+@keyframes slideUp{
+
+    0% { 
+
+        transform: translate(0, 300px);
+    }
+
+
+    100% { 
+
+        transform: translate(0, 0);
+    }
+
+
+}
+
+
+
+form{
+    position: absolute;
+    animation: slideUp 1s;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1em;
+    background: var(--primary-color);
+    max-width: 100%;
+    width: 500px;
+    height: 250px;
+    box-shadow: 5px 10px 20px #342c00;
+    color:#fff;
+    text-align: center;
+    font-family: 'Lato', sans-serif
+}
+
+form > span{
+    position: absolute;
+    top: 0;
+}
+
+
+
+.form >p {
+    width:150px;
+}
+
+input[name="email"]{
+    padding: 15px 15px;
+    margin: 8px 0;
+  
+    border: none;
+    width:250px;
+    background: rgba(19, 19, 19, 0.098);
+    align-self: center;
+    box-sizing: border-box;
+    text-indent: 40px;
+    color:#fff;
+    outline:none; 
+}
+
+
+input[type=submit]{
+
+    padding: 15px 15px;
+    margin:25px 0;
+    border: none;
+    width:250px;
+    align-self: center;
+    background:var(--accent-color);
+    color:#fff;
+    box-sizing: border-box;
+    outline:none; 
+  }
+
+  .modal-group{
+      display:flex;
+      position: absolute;
+      top:0;
+      right: 5px;
+  }
+
+  .modal-group > span{
+      font-size:20px;
+  }
+
+  
+
+ 
+
+.learn-more > h1{
+
+    margin-bottom: 20px;
+}
+
+.learn-more > h3{
+    font-size: 21.5px;
+    margin: 20px 0;
+    font-weight: 300;
+    color:var(--primary-color);
+}
+
+.brandywine-price > h3{
+    align-self: center;
+    font-size:35px;
+    font-weight: 300;
+    margin: 10px 0;
+    color:var(--page-copy-color);
+}
+
+
+
+.brandywine-score > h3{
+    font-weight: 300;
+    font-size:30px;
+    margin: 0 10px;
+}
+
+
+
+.button-row{
+    display:flex;
+    flex-flow: row;
+}
+
+button{
+    display:block;
+    padding: 15px;
+    width:312px;
+}
+
+button:nth-child(1){
+    background-color:var(--accent-color);
+    border:none;
+    color:#fff;
+    font-size:16px;
+    font-weight: 700;
+    margin-right:20px;
+}
+
+button:nth-child(2){
+    background-color:var(--primary-color);
+    border:none;
+    color:#fff;
+    font-size:16px;
+    font-weight: 700;
+
+}
+
+.brandywine-score{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Intro section */
+
+/* Testimonial section */
+.testimonial{
+    min-width:100%;
+    height:450px;
+    padding:20px;
+}
+
+
+.rosemary-testimonial{
+ height: 100%;
+ position:relative;
+ display:flex;
+ flex-flow:row wrap;
+ justify-content: space-between;
+ background-color:var(--primary-color);
+ padding: 20px;
+ box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.4);
+}
+
+.rosemary-image > h4{
+    color:#fff;
+    font-size:0.8em;
+    font-weight: 400;
+    text-align: center;
+    padding:5px 0;
+}
+
+.rosemary-text{
+    max-width:90%;
+    color:#fff;
+    font-size:35px;
+    font-weight: 300;
+}
+
+.reply{
+    color:var(--accent-color);
+}
+.text-pointer{
+    position: absolute;
+    right: 10px;
+}
+
+/* End Testimonial section */
+
+/* Overview section */
+
+.overview{
+    height:400px;
+    margin: 40px 20px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+
+.brandywine-overview{
+   display:grid;
+   grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+}
+
+.patricia-image:before{
+    content: '';
+    border-left: 1px solid #F2F2F2;
+}
+
+
+.patricia-image{
+    display:flex;
+    flex-direction: row;
+}
+
+.patricia-image > img{
+    width:100px;
+    height:100px;
+    margin: 0 10px;
+}
+
+.assisted-living-overview{
+    max-width:700px;
+}
+
+.assisted-living-overview > p{
+    color: var(--page-copy-color);
+}
+
+/* End Overview section */
+
+/* Images section */
+.images{
+    height:350px;
+    margin:40px 0;
+}
+
+.patricia-title{
+    margin-top:20px;
+}
+
+.images-container{
+    position:relative;
+    width:100%;
+    height: 340px;
+    padding: 0 20px;
+}
+
+.images-container > img{
+    width:100%;
+    max-height:100%;
+}
+
+.more-images-btn{
+    position: absolute;
+    right:10px;
+}
+/* End Images section */
+
+/* Building Facts Section */
+.building-facts{
+    
+    height:400px;
+}
+
+
+.building-info{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    margin: 0 20px;
+}
+
+.building-info ul li{
+    list-style: none;
+    font-size:0.8em;
+    font-weight: 400;
+    padding:15px;
+    color:var(--page-copy-color);
+}
+
+.facts, .district, .floor-plans{
+    border:1px solid #F2F2F2;
+    border-radius: 5px;
+    min-width:400px;
+}
+
+.facts ul li:nth-child(1), .district ul li:nth-child(1){
+    font-weight: 700;
+    font-size: 1.1em;
+    color:var(--primary-color);
+}
+
+.floor-plans > h3{
+    border-bottom:1px solid #F2F2F2;
+    padding:15px;
+} 
+
+.floor-plans > a {
+    text-decoration: none;
+    display:block;
+    padding:15px;
+}
+
+.floor-plans > a:visited{
+    color:#6D63FB;
+}
+
+
+.facts ul li:not(:last-child), .district ul li:not(:last-child) {
+    border-bottom:1px solid #f2f2f2;
+}
+
+.view-more{
+    padding: 30px 0;
+    text-align:center;
+}
+
+/* End Building Facts Section */
+
+/* Footer */
+footer{
+    height:320px;
+    background-color:var(--primary-color);
+}
+/* End Footer */
