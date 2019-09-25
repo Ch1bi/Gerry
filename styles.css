@@ -340,10 +340,15 @@ button:nth-child(2){
 
 .assisted-living-overview{
     max-width:700px;
+    
 }
 
 .assisted-living-overview > p{
     color: var(--page-copy-color);
+}
+
+.assisted-living-overview > h2{
+    color: var(--primary-color);
 }
 
 /* End Overview section */
@@ -356,6 +361,10 @@ button:nth-child(2){
 
 .patricia-title{
     margin-top:20px;
+}
+
+.patricia-title > h4{
+    color: var(--primary-color);
 }
 
 .images-container{
